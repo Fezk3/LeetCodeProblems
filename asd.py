@@ -1,0 +1,1 @@
+def performOperations(arr, operations):
