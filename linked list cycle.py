@@ -17,4 +17,15 @@ class Solution:
                 return True
 
         return False  # no hay ciclo
-    
+
+class Solution2:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        dic = {}
+
+        while head:
+            if head in dic:
+                return True
+            dic[head] = True
+            head = head.next
+
+        return False
